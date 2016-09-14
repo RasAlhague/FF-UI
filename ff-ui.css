@@ -72,7 +72,6 @@
 #tabbrowser-tabs .scrollbutton-up,
 #tabbrowser-tabs .scrollbutton-down,
 statusbarpanel,
-#identity-box,
 #urlbar-container dropmarker,
 toolbar#addon-bar toolbarbutton .toolbarbutton-menubutton-dropmarker,
 toolbar#addon-bar #addonbar-closebutton,
@@ -87,6 +86,12 @@ toolbar#addon-bar #addonbar-closebutton,
 {
   display: none !important;
 }
+
+#identity-box {
+  padding: 3px 3px 3px 3px !important;
+  background: #F5F6F7 !important;
+}
+
 
 #browser-border-end,
 #browser-border-start {
@@ -343,18 +348,6 @@ max-width: 100% !important;
 }
 
 
-#identity-box, #dropmarker-icon, #historydropmarker, #autocomplete-history-dropmarker, #urlbar-history-dropmarker, #dropmarker {
-    display: none !important;
-}
-
-#autocomplete-history-dropmarker, #urlbar-history-dropmarker, #urlbar-reload-button {
-    display: none !important;
-}
-
-.autocomplete-history-dropmarker.urlbar-history-dropmarker {
-    display: none !important;
-}
-
 #plugins-notification-icon, #notification-anchor-icon, #notification-popup-box {
     display: none !important;
     
@@ -393,10 +386,10 @@ max-width: 100% !important;
 
 /* remove back/fwd */
 
-#nav-bar  #back-button > .toolbarbutton-icon {
+#nav-bar  #back-button {
  display: none !important;
 }
- #forward-button {
+#forward-button {
  display: none !important;
 }
 
