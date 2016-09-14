@@ -80,7 +80,11 @@ toolbar#addon-bar #addonbar-closebutton,
 #appmenu-toolbar-button,
 #reader-mode-button,
 #readinglist-addremove-button
-#lpt_lastpass-compact-btn {
+#lpt_lastpass-compact-btn, 
+/* Close tab button */
+.tab-close-button,
+.close-icon 
+{
   display: none !important;
 }
 
@@ -209,9 +213,9 @@ max-width: 100% !important;
 /* Selected Tab */
 
 #main-window .tabbrowser-tab[selected] {
-  background-color: #4084D6 !important;
+  background-color: rgb(150, 200, 255) !important;
   box-shadow: none !important;
-  color: #F5F6F7 !important;
+  color: #5c616C !important;
   font-size: 11pt;
   margin-bottom: -2px;
   border-bottom: 2px solid #4084D6 !important;
@@ -221,8 +225,16 @@ max-width: 100% !important;
   background-color: #79A9E2 !important;
 }
 
+
 /* Pinned tab titlechange */
 
+#main-window .tabbrowser-tab[titlechanged] {
+  background-color: #EFF0F1 !important;
+  color: #5C616C !important;
+  border-bottom: 3px solid #4084D6 !important;
+}
+
+/* 
 .tabbrowser-tab[titlechanged] .tab-icon-image {
   animation: newpost .9s ease infinite; 
 }
@@ -231,13 +243,14 @@ max-width: 100% !important;
 @keyframes newpost {
   25% {  transform: scale(1.1);   }
 }
+*/
 
 /* new tab button */
 
 .tabs-newtab-button {
   width: 38px !important;
   float: right !important;
-  margin-top: 1px !important;
+  margin-top: 0px !important;
   padding-left: 2px !important;
   padding-right: 2px !important;
   background: #ffffff !important;
