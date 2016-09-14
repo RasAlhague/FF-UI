@@ -1,4 +1,4 @@
-# Favorite-FF-UI
+# FF-UI
 
 Original: https://userstyles.org/styles/126809/acid-rain
 
