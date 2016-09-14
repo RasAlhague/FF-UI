@@ -75,6 +75,8 @@
 statusbarpanel,
 #urlbar-container dropmarker,
 
+#urlbar-go-button,
+
 #addon-bar,
 toolbar#addon-bar toolbarbutton .toolbarbutton-menubutton-dropmarker,
 toolbar#addon-bar #addonbar-closebutton,
@@ -227,7 +229,7 @@ tab {
 /* Selected Tab */
 
 #main-window .tabbrowser-tab[selected] {
-  background-color: rgb(150, 200, 255) !important; */
+  background-color: rgb(150, 200, 255) !important;
   box-shadow: none !important;
   color: #5c616C !important;
   font-size: 11pt;
@@ -292,7 +294,7 @@ tab {
 #searchbar > .searchbar-textbox,
 #urlbar {
     border: none !important;
-    text-align: left !important;
+    text-align: center !important;
     background-color: #F5F6F7 !important;
     margin-top: 0px !important;
 /*     margin-left: 10px !important; */
