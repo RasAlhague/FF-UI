@@ -63,6 +63,7 @@
   background: none !important;
 }
 
+
 #urlbar-reload-button,
 .urlbar-history-dropmarker,
 #star-button,
@@ -73,8 +74,11 @@
 #tabbrowser-tabs .scrollbutton-down,
 statusbarpanel,
 #urlbar-container dropmarker,
+
+#addon-bar,
 toolbar#addon-bar toolbarbutton .toolbarbutton-menubutton-dropmarker,
 toolbar#addon-bar #addonbar-closebutton,
+
 #appmenu-button,
 #appmenu-toolbar-button,
 #reader-mode-button,
@@ -88,7 +92,7 @@ toolbar#addon-bar #addonbar-closebutton,
 }
 
 #identity-box {
-  padding: 3px 3px 3px 3px !important;
+  padding: 3px 3px 3px 5px !important;
   background: #F5F6F7 !important;
 }
 
@@ -103,7 +107,9 @@ toolbar#addon-bar #addonbar-closebutton,
 }
 
 #nav-bar #PanelUI-menu-button {
-  padding: 0 !important;
+  padding: 0px 0px 0px 0px !important;
+  margin: 0px 0px 0px 0px !important;
+  width: 34px !important;
 }
 
 #PanelUI-button {
@@ -174,8 +180,8 @@ tab {
 }
 
 .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
-min-width: 10px !important;
-max-width: 100% !important;
+  min-width: 10px !important;
+  max-width: 100% !important;
 }
 
 .tabbrowser-tab:not([pinned]) .tab-throbber,
@@ -184,15 +190,17 @@ max-width: 100% !important;
 }
 
 #main-window .tabbrowser-tab {
-  height: 26px !important;
-  min-height: 26px !important;
+  height: 20px !important;
+  min-height: 20px !important;
+  margin-left: -1px !important;
 }
 
 /* Standard Tabs */
 
 #main-window .tabbrowser-tab {
 /*   border: 1px solid rgba(71,71,71,0.1) !important; */
-  font-size:11pt
+  font-size: 11pt !important;
+  height: 10px !important;
 }
 
 #main-window #tabbrowser-tabs tab[pinned] {
@@ -201,7 +209,7 @@ max-width: 100% !important;
 
 #main-window .tabbrowser-tab:not(:-moz-lwtheme)  {
   background-color: #F5F6F7 !important;
-  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.4) !important;
   color: #5c616C !important;
   transition: all .1s ease-in-out !important;
 }
@@ -218,12 +226,12 @@ max-width: 100% !important;
 /* Selected Tab */
 
 #main-window .tabbrowser-tab[selected] {
-  background-color: rgb(150, 200, 255) !important;
+  background-color: rgb(150, 200, 255) !important; */
   box-shadow: none !important;
   color: #5c616C !important;
   font-size: 11pt;
-  margin-bottom: -2px;
-  border-bottom: 2px solid #4084D6 !important;
+/*   margin-bottom: -2px; */
+  border-bottom: 3px solid #4084D6 !important;
 }
 
 #main-window .tabbrowser-tab[selected]:hover {
@@ -259,7 +267,7 @@ max-width: 100% !important;
   padding-left: 2px !important;
   padding-right: 2px !important;
   background: #ffffff !important;
-  box-shadow: inset 0 -5px 15px -15px rgba(0, 0, 0, .5) !important;
+  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.4) !important;
   border: none !important;
   border-radius: 0 !important;
 }
@@ -282,18 +290,21 @@ max-width: 100% !important;
 
 /*styling*/
 #searchbar > .searchbar-textbox,
-
 #urlbar {
     border: none !important;
     text-align: left !important;
     background-color: #F5F6F7 !important;
     margin-top: 0px !important;
-    margin-left: 10px !important;
+/*     margin-left: 10px !important; */
     padding: 0px !important;
     color: #5C616C !important;
     font-size: 11pt;
     border-radius: 0px !important;
     transition: all .1s ease-in-out;
+}
+
+#urlbar-wrapper {
+  margin: 0px 0px 0px 0px !important;
 }
 
 #urlbar .autocomplete-textbox-container {
@@ -303,28 +314,20 @@ max-width: 100% !important;
 #urlbar:focus {
   background-color: #000 !important;
 }
-#urlbar .autocomplete-textbox-container[focused="true"] {background-color: #FFFFFF !important;}
+#urlbar .autocomplete-textbox-container[focused="true"] {
+  background-color: #FFFFFF !important;
+}
 
 #nav-bar {
-    height: 24px;
+    height: 25px;
     background-color: #F5F6F7 !important;
     border: none !important;
     margin-bottom: -1px !important;
     margin-top: -1px !important;
+    padding-top: 0px !important;
     background-image: none !important;
-    margin-left:-3px !important;
-    box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
+    box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.4) !important;
 }
-    
-  #PanelUI-button, #customization-panel-container,
-  #customization-panelWrapper .panel-arrow,
-  #ctr_panelui-button,
-  #wrapper-ctr_panelui-button {
-
-    -moz-box-ordinal-group: 0
-
-  }
-
 
 #PanelUI-button {
 
