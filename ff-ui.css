@@ -161,7 +161,7 @@ select > input {
 
 tab {
   font-family: "Source Sans Pro", sans-serif !important;
-  text-align: center !important;
+  text-align: start !important;
 }
 
 .tabbrowser-tabs:not([drag=detach]) > .tabbrowser-tab:not([pinned])[fadein] {
@@ -171,7 +171,7 @@ max-width: 100% !important;
 
 .tabbrowser-tab:not([pinned]) .tab-throbber,
 .tabbrowser-tab:not([pinned]) .tab-icon-image {
-   visibility: collapse !important;
+   visibility: visible !important;
 }
 
 #main-window .tabbrowser-tab {
@@ -191,7 +191,7 @@ max-width: 100% !important;
 }
 
 #main-window .tabbrowser-tab:not(:-moz-lwtheme)  {
-  background-color: transparent !important;
+  background-color: #F5F6F7 !important;
   box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
   color: #5c616C !important;
   transition: all .1s ease-in-out !important;
@@ -269,7 +269,7 @@ max-width: 100% !important;
     border: none !important;
     text-align: left !important;
     background-color: #F5F6F7 !important;
-    margin-top: -2px !important;
+    margin-top: 0px !important;
     margin-left: 10px !important;
     padding: 0px !important;
     color: #5C616C !important;
@@ -295,6 +295,7 @@ max-width: 100% !important;
     margin-top: -1px !important;
     background-image: none !important;
     margin-left:-3px !important;
+    box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.2) !important;
 }
     
   #PanelUI-button, #customization-panel-container,
