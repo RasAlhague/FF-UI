@@ -221,6 +221,7 @@ tab {
   background-color: #EFF0F1 !important;
   color: #5C616C !important;
   border-bottom: 3px solid #4084D6 !important;
+  z-index: 9999 !important;
 }
 
 /* Selected Tab */
@@ -230,7 +231,6 @@ tab {
   box-shadow: none !important;
   color: #5c616C !important;
   font-size: 11pt;
-/*   margin-bottom: -2px; */
   border-bottom: 3px solid #4084D6 !important;
 }
 
