@@ -217,7 +217,7 @@ tab {
   background-color: #EFF0F1 !important;
   color: #5C616C !important;
   border-bottom: 3px solid #4084D6 !important;
-  z-index: 9999 !important;
+  z-index: 1000 !important;
 }
 
 /* Selected Tab */
@@ -241,6 +241,7 @@ tab {
   background-color: #EFF0F1 !important;
   color: #5C616C !important;
   border-bottom: 3px solid #4084D6 !important;
+  z-index: 1000 !important;
 }
 
 /* 
